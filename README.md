@@ -29,21 +29,6 @@ Dự án này nhằm xây dựng một mô hình Hồi quy Logistic để dự �
 └── README.md             # Tài liệu hướng dẫn
 ```
 
-## 🚀 Cách sử dụng
-1. Clone repository:
-```bash
-git clone [repository-url]
-```
-
-2. Cài đặt các thư viện cần thiết:
-```bash
-pip install -r requirements.txt
-```
-
-3. Mở và chạy notebook:
-   - Mở file `notebook/MAI391_SE194127_final_project.ipynb`
-   - Chạy các cell theo thứ tự
-
 ## 📈 Kết quả
 ### So sánh hiệu suất mô hình
 | Chỉ số | Mô hình cơ bản | Mô hình GridSearchCV |
