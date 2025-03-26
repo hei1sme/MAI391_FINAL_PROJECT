@@ -14,20 +14,29 @@ Dự án này nhằm xây dựng một mô hình Hồi quy Logistic để dự �
 - **Số đặc trưng:** 35 biến đầu vào
 
 ## 🛠️ Công nghệ sử dụng
-- Python 3.x
-- Pandas, NumPy
-- Scikit-learn
-- Matplotlib, Seaborn
+### Thư viện chính
+- **Xử lý dữ liệu:** Pandas, NumPy
+- **Học máy:** Scikit-learn
+- **Trực quan hóa:** Matplotlib, Seaborn
+- **Thống kê:** SciPy, Statsmodels
 
-## 📋 Cấu trúc dự án
-```
-├── data/                   # Thư mục chứa dữ liệu
-│   └── HR-Employee-Attrition.csv
-├── notebook/              # Jupyter notebooks
-│   └── MAI391_SE194127_final_project.ipynb
-├── LICENSE                # Giấy phép MIT
-└── README.md             # Tài liệu hướng dẫn
-```
+### Các công cụ cụ thể
+- **Tiền xử lý dữ liệu:**
+  - StandardScaler: Chuẩn hóa dữ liệu
+  - LabelEncoder: Mã hóa biến phân loại
+  - SMOTE: Cân bằng dữ liệu
+  - Variance Inflation Factor: Kiểm tra đa cộng tuyến
+
+- **Mô hình hóa:**
+  - LogisticRegression: Mô hình chính
+  - GridSearchCV: Tối ưu hóa siêu tham số
+  - train_test_split: Chia tập dữ liệu
+
+- **Đánh giá mô hình:**
+  - classification_report: Báo cáo phân loại
+  - confusion_matrix: Ma trận nhầm lẫn
+  - accuracy_score: Độ chính xác
+  - roc_curve, auc: Đường cong ROC
 
 ## 📈 Kết quả
 ### So sánh hiệu suất mô hình
@@ -44,14 +53,6 @@ Dự án này nhằm xây dựng một mô hình Hồi quy Logistic để dự �
 3. TotalWorkingYears (0.776)
 4. YearsInCurrentRole (0.773)
 5. YearsWithCurrManager (0.520)
-
-## 🤝 Đóng góp
-Mọi đóng góp đều được chào đón! Vui lòng:
-1. Fork dự án
-2. Tạo branch mới (`git checkout -b feature/AmazingFeature`)
-3. Commit thay đổi (`git commit -m 'Add some AmazingFeature'`)
-4. Push lên branch (`git push origin feature/AmazingFeature`)
-5. Mở Pull Request
 
 ## 📄 License
 Dự án này được phân phối dưới giấy phép MIT. Xem `LICENSE` để biết thêm thông tin.
