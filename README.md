@@ -10,9 +10,16 @@ Dự án này nhằm xây dựng một mô hình Hồi quy Logistic để dự �
 
 ## 📊 Dữ liệu
 - **Nguồn:** [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data)
-- **Kích thước:** 1,956 mẫu training, 294 mẫu test
-- **Số đặc trưng:** 24 biến đầu vào
-- **Biến mục tiêu:** Attrition (Nghỉ việc/Không nghỉ việc)
+- **Kích thước:** 1,471 mẫu
+- **Số đặc trưng:** 35 biến đầu vào
+- **Biến mục tiêu:** Attrition (Yes/No)
+- **Các đặc trưng chính:**
+  - Thông tin cá nhân: Age, Gender, MaritalStatus
+  - Thông tin công việc: Department, JobRole, JobLevel
+  - Thông tin tài chính: MonthlyIncome, DailyRate, HourlyRate
+  - Thông tin thâm niên: YearsAtCompany, YearsInCurrentRole
+  - Mức độ hài lòng: EnvironmentSatisfaction, JobSatisfaction
+  - Các yếu tố khác: BusinessTravel, DistanceFromHome, OverTime
 
 ## 🛠️ Công nghệ sử dụng
 - Python 3.x
@@ -23,6 +30,7 @@ Dự án này nhằm xây dựng một mô hình Hồi quy Logistic để dự �
 ## 📋 Cấu trúc dự án
 ```
 ├── data/                   # Thư mục chứa dữ liệu
+│   └── HR-Employee-Attrition.csv
 ├── notebook/              # Jupyter notebooks
 │   └── MAI391_SE194127_final_project.ipynb
 ├── LICENSE                # Giấy phép MIT
